@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:mysql://localhost:3306/sales
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port: 587
+    username: thanhthaohoa9999@gmail.com
+    password: pkgm iheu mlcj fqka
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+
+# Cấu hình Redis cache
+  cache:
+    type: simple
+
+
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId:  248305841037-l568t6kcok1hsi86c0h4c8apiijld4bd.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
+
+
+          facebook:
+            clientId: 711180107856870
+            clientSecret: 0d2d3b5d6e98f7367b35debaa584602c
+            scope:
+              - email
+              - public_profile
+#              - user_photos
+#              - user_friends
